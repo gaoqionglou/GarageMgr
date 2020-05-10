@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/activity_content_margin_start"
+    android:paddingEnd="@dimen/activity_content_margin_end"
+
+    tools:context=".ui.mine.MineFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/personalInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/content_background"
+        android:padding="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/accountNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/primary_text_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/content_margin_top"
+            android:textSize="@dimen/primary_text_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accountNameTV" />
+
+        <TextView
+            android:id="@+id/genderTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/primary_text_size"
+            app:layout_constraintBaseline_toBaselineOf="@+id/nameTV"
+            app:layout_constraintLeft_toRightOf="@+id/nameTV" />
+
+        <TextView
+            android:id="@+id/personalIdTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/content_margin_top"
+            android:textSize="@dimen/primary_text_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/genderTV" />
+
+        <TextView
+            android:id="@+id/phoneNumberTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/content_margin_top"
+            android:textSize="@dimen/primary_text_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/personalIdTV" />
+
+        <TextView
+            android:id="@+id/rfiNumberTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/content_margin_top"
+            android:textSize="@dimen/primary_text_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phoneNumberTV" />
+
+        <TextView
+            android:id="@+id/updatePersonalInfoTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/primary_bg_single_selector"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/update_personal_info"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/primary_text_size"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/carInfoTV"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_min_height"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/common_bg_single_selector"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/content_padding_start"
+        android:paddingEnd="@dimen/content_padding_end"
+        android:text="@string/car_info"
+        android:textSize="@dimen/primary_text_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/personalInfoLayout" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carInfoTV">
+
+        <TextView
+            android:id="@+id/rechargeView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_min_height"
+            android:background="@drawable/common_bg_top_selector"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/content_padding_start"
+            android:paddingEnd="@dimen/content_padding_end"
+            android:text="充值"
+            android:textSize="@dimen/primary_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/rechargeDividerView"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/divider_line_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rechargeView" />
+
+
+        <TextView
+            android:id="@+id/orderView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_min_height"
+            android:background="@drawable/common_bg_middle_selector"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/content_padding_start"
+            android:paddingEnd="@dimen/content_padding_end"
+            android:text="预约订单信息"
+            android:textSize="@dimen/primary_text_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rechargeDividerView" />
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/divider_line_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/orderView" />
+
+        <TextView
+            android:id="@+id/payView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_min_height"
+            android:background="@drawable/common_bg_bottom_selector"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/content_padding_start"
+            android:paddingEnd="@dimen/content_padding_end"
+            android:text="停车记录"
+            android:textSize="@dimen/primary_text_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/orderView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

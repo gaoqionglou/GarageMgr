@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_garage"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_garage" />
+
+    <item
+        android:id="@+id/navigation_reserve"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_reserve" />
+
+    <item
+        android:id="@+id/navigation_driving_record"
+        android:icon="@drawable/ic_near_me_black_24dp"
+        android:title="@string/title_navigation" />
+
+    <item
+        android:id="@+id/navigation_mine"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="@string/title_mine" />
+
+</menu>

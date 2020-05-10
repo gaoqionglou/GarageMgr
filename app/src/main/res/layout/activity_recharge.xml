@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_content_margin_top">
+
+    <TextView
+        android:id="@+id/currentMoney"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_min_height"
+        android:background="@drawable/content_background"
+        android:paddingStart="@dimen/content_padding_start"
+        android:paddingEnd="@dimen/content_padding_end"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_min_height"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/content_background"
+        android:paddingStart="@dimen/content_padding_start"
+        android:paddingEnd="@dimen/content_padding_end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/currentMoney">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="充值额度"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/rechageLimitView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:inputType="number"
+                android:selectAllOnFocus="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/rechargeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="充值"
+        android:textColor="@android:color/white"
+        android:background="@drawable/primary_bg_single_selector"
+        android:textSize="@dimen/primary_text_size"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/content"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

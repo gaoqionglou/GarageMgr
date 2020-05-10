@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_garage">
+
+    <fragment
+        android:id="@+id/navigation_garage"
+        android:name="com.wyr.garage.ui.garage.GarageFragment"
+        android:label="@string/title_garage"
+        tools:layout="@layout/fragment_garage" />
+
+    <fragment
+        android:id="@+id/navigation_reserve"
+        android:name="com.wyr.garage.ui.reserve.ReserveFragment"
+        android:label="@string/title_reserve"
+        tools:layout="@layout/fragment_reserve" />
+
+    <fragment
+        android:id="@+id/navigation_driving_record"
+        android:name="com.wyr.garage.ui.map.GarageMapFragment"
+        android:label="@string/title_navigation"
+        tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/navigation_mine"
+        android:name="com.wyr.garage.ui.mine.MineFragment"
+        android:label="@string/title_mine"
+        tools:layout="@layout/fragment_mine" />
+</navigation>

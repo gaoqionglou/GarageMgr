@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">智能车库管理系统</string>
+    <!-- Strings related to login -->
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="register">注册</string>
+    <string name="prompt_username">用户名</string>
+    <string name="prompt_password">密码</string>
+    <string name="prompt_repassword">重复密码</string>
+    <string name="real_name">真实姓名</string>
+    <string name="id_card_num">身份证号</string>
+    <string name="contact_info">联系方式</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="gender">性别</string>
+    <string name="sign_in">登陆</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="title_garage">车库信息</string>
+    <string name="title_reserve">快速预定</string>
+    <string name="title_navigation">导航</string>
+    <string name="title_mine">个人中心</string>
+    <string name="update_personal_info">修改信息</string>
+    <string name="car_info">车辆信息</string>
+    <string name="receipts">消费记录</string>
+    <string name="recharge">充值记录</string>
+
+    <string name="please_choose_garage">请选择车库</string>
+    <string name="please_choose_car_number">请选择车牌</string>
+    <string name="please_choose_car_parking_time">请选择停车时间段</string>
+    <string name="default_parking_time">停车时间段如:0:00–2:00</string>
+    <string name="start_parking_time">选择开始时间</string>
+    <string name="end_parking_time">选择结束时间</string>
+    <string name="reserve">快速预定</string>
+
+    <string name="update">修改</string>
+    <string name="add_car">增加车辆</string>
+
+    <string name="car_number">车牌号</string>
+    <string name="car_type">车辆类型</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="delete">删除</string>
+    <string name="title_activity_comment">CommentActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

@@ -18,6 +18,12 @@
         tools:layout="@layout/fragment_reserve" />
 
     <fragment
+        android:id="@+id/navigation_car_info"
+        android:name="com.wyr.garage.ui.info.InfoFragment"
+        android:label="@string/title_info"
+        tools:layout="@layout/fragment_info" />
+
+    <fragment
         android:id="@+id/navigation_driving_record"
         android:name="com.wyr.garage.ui.map.GarageMapFragment"
         android:label="@string/title_navigation"

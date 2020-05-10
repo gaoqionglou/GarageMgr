@@ -25,6 +25,7 @@
 
     <string name="title_garage">车库信息</string>
     <string name="title_reserve">快速预定</string>
+    <string name="title_info">车友咨讯</string>
     <string name="title_navigation">导航</string>
     <string name="title_mine">个人中心</string>
     <string name="update_personal_info">修改信息</string>

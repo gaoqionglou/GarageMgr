@@ -12,6 +12,11 @@
         android:title="@string/title_reserve" />
 
     <item
+        android:id="@+id/navigation_car_info"
+        android:icon="@drawable/ic_directions_car_black_24dp"
+        android:title="@string/title_info" />
+
+    <item
         android:id="@+id/navigation_driving_record"
         android:icon="@drawable/ic_near_me_black_24dp"
         android:title="@string/title_navigation" />

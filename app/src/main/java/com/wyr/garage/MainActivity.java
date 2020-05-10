@@ -1,14 +1,9 @@
 package com.wyr.garage;
 
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.TextView;
-
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.wyr.garage.databinding.ActionBarLayoutBinding;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -19,6 +14,9 @@ import androidx.navigation.NavDestination;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.wyr.garage.databinding.ActionBarLayoutBinding;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.navigation_garage, R.id.navigation_reserve, R.id.navigation_driving_record,
+                R.id.navigation_garage, R.id.navigation_reserve, R.id.navigation_car_info, R.id.navigation_driving_record,
                 R.id.navigation_mine)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -52,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void setCustomActionBar() {
         mActionBarViewBinding = ActionBarLayoutBinding.inflate(LayoutInflater.from(this));
-        ActionBar.LayoutParams lp =new ActionBar.LayoutParams(ActionBar.LayoutParams.MATCH_PARENT, ActionBar.LayoutParams.MATCH_PARENT, Gravity.CENTER);
+        ActionBar.LayoutParams lp = new ActionBar.LayoutParams(ActionBar.LayoutParams.MATCH_PARENT, ActionBar.LayoutParams.MATCH_PARENT, Gravity.CENTER);
         View mActionBarView = mActionBarViewBinding.getRoot();
         ActionBar actionBar = getSupportActionBar();
         actionBar.setCustomView(mActionBarView, lp);

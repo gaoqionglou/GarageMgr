@@ -1,11 +1,10 @@
 package com.wyr.garage.util;
 
 import android.util.Log;
-import android.widget.DatePicker;
 
 import com.wyr.garage.data.model.Car;
 import com.wyr.garage.data.model.Garage;
-import com.wyr.garage.data.model.LoggedInUser;
+import com.wyr.garage.data.model.Info;
 import com.wyr.garage.data.model.Order;
 import com.wyr.garage.data.model.ParkingSpace;
 import com.wyr.garage.db.AppDatabase;
@@ -137,6 +136,73 @@ public class Utils {
             car.setCarNumber("粤A2848");
             car.setCarType("BMW");
             AppDatabase.getInstance().carDao().insertCar(car);
+
+
+            Info info = new Info();
+            info.setInfoId(1);
+            info.setTitle("油箱已满，行程已定，五月旅途情满爱卡");
+            info.setDesc("选择在母亲节这天出发，可以说母亲节这次旅行是计划了很久的，工作之后，异地，又远嫁，有时很忙，有时和朋友在外聚餐，有时在外游玩，可是却总是忘记平常的时...");
+            info.setUrl("http://www.xcar.com.cn/bbs/viewthread.php?tid=95188001");
+            info.setImageUrl("http://image.xcar.com.cn/attachments/a/day_200510/20200510184104_501708052_tour.jpg?&imageView2/1/w/362/h/240");
+            AppDatabase.getInstance().infoDao().insertCar(info);
+
+
+            info = new Info();
+            info.setInfoId(2);
+            info.setTitle("我在荣威RX5论坛打卡之鹏程万里(2) 南头古城的点点滴滴");
+            info.setDesc("一直计划走遍Xcar数百个分论坛的山山水水，顺便一睹各位版主风采。估计也完成了不少了吧，众多版主都热情互动，也为剩下的“行程”增加了不少动力。...");
+            info.setUrl("http://www.xcar.com.cn/bbs/viewthread.php?tid=95188001");
+            info.setImageUrl("http://image.xcar.com.cn/attachments/a/day_200510/20200510160416_441197332_tour.jpg?&imageView2/1/w/362/h/240");
+            AppDatabase.getInstance().infoDao().insertCar(info);
+
+            info = new Info();
+            info.setInfoId(3);
+            info.setTitle("携手卡友资源，文旅地产项目考察。");
+            info.setDesc("爱卡重分携手重庆康养协会一行考察会员公司禾旭行代理的文旅地产项目，位于中国大陆最南端，三面环海，坐享无敌海景，总价30余万起，投资养老不二选择。第一...");
+            info.setUrl("http://www.xcar.com.cn/bbs/viewthread.php?tid=95187561");
+            info.setImageUrl("http://image.xcar.com.cn/attachments/a/day_200510/2020051016_7a8bc5d835d4faa203f6149KuVtg2CY7.jpg?&imageView2/1/w/362/h/240");
+            AppDatabase.getInstance().infoDao().insertCar(info);
+
+
+            info = new Info();
+            info.setInfoId(4);
+            info.setTitle("【自驾达人秀】寻找户外乐呵");
+            info.setDesc("选择在母亲节这天出发，可以说母亲节这次旅行是计划了很久的，工作之后，异地，又远嫁，有时很忙，有时和朋友在外聚餐，有时在外游玩，可是却总是忘记平常的时...");
+            info.setUrl("http://www.xcar.com.cn/bbs/viewthread.php?tid=95188001");
+            info.setImageUrl("http://image.xcar.com.cn/attachments/a/day_200510/20200510184104_501708052_tour.jpg?&imageView2/1/w/362/h/240");
+            AppDatabase.getInstance().infoDao().insertCar(info);
+
+            info = new Info();
+            info.setInfoId(5);
+            info.setTitle("【自驾达人秀】寻找户外乐呵");
+            info.setDesc("今年5天假肯定能玩嗨，自驾游寻找户外乐！自驾第一天坐标呼和浩特市哈拉沁水库走起疫情过后的一个全家放松，自驾游还是能很好亲近大自然的机会，...");
+            info.setUrl("http://www.xcar.com.cn/bbs/viewthread.php?tid=95188001");
+            info.setImageUrl("http://image.xcar.com.cn/attachments/a/day_200510/2020051017_c8d0cce39f19a51939c8WZHi5nHyI3PR.jpg?&imageView2/1/w/362/h/240");
+            AppDatabase.getInstance().infoDao().insertCar(info);
+
+            info = new Info();
+            info.setInfoId(6);
+            info.setTitle("【自驾达人秀】寻找户外乐呵");
+            info.setDesc("选择在母亲节这天出发，可以说母亲节这次旅行是计划了很久的，工作之后，异地，又远嫁，有时很忙，有时和朋友在外聚餐，有时在外游玩，可是却总是忘记平常的时...");
+            info.setUrl("http://www.xcar.com.cn/bbs/viewthread.php?tid=95188001");
+            info.setImageUrl("http://image.xcar.com.cn/attachments/a/day_200510/20200510184104_501708052_tour.jpg?&imageView2/1/w/362/h/240");
+            AppDatabase.getInstance().infoDao().insertCar(info);
+
+            info = new Info();
+            info.setInfoId(7);
+            info.setTitle("【自驾达人秀】寻找户外乐呵");
+            info.setDesc("选择在母亲节这天出发，可以说母亲节这次旅行是计划了很久的，工作之后，异地，又远嫁，有时很忙，有时和朋友在外聚餐，有时在外游玩，可是却总是忘记平常的时...");
+            info.setUrl("http://www.xcar.com.cn/bbs/viewthread.php?tid=95188001");
+            info.setImageUrl("http://image.xcar.com.cn/attachments/a/day_200510/20200510184104_501708052_tour.jpg?&imageView2/1/w/362/h/240");
+            AppDatabase.getInstance().infoDao().insertCar(info);
+
+            info = new Info();
+            info.setInfoId(8);
+            info.setTitle("【自驾达人秀】寻找户外乐呵");
+            info.setDesc("选择在母亲节这天出发，可以说母亲节这次旅行是计划了很久的，工作之后，异地，又远嫁，有时很忙，有时和朋友在外聚餐，有时在外游玩，可是却总是忘记平常的时...");
+            info.setUrl("http://www.xcar.com.cn/bbs/viewthread.php?tid=95188001");
+            info.setImageUrl("http://image.xcar.com.cn/attachments/a/day_200510/20200510184104_501708052_tour.jpg?&imageView2/1/w/362/h/240");
+            AppDatabase.getInstance().infoDao().insertCar(info);
 
             showDB();
         } catch (Exception e) {

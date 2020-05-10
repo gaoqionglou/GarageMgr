@@ -51,6 +51,7 @@
         <activity android:name=".ui.map.RouteNaviActivity" />
         <activity android:name=".ui.mine.RechargeActivity" />
         <activity android:name=".ui.mine.OrderActivity" />
+        <activity android:name=".ui.web.H5Activity" />
     </application>
 
 </manifest>

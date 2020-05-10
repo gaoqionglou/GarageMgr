@@ -3,6 +3,8 @@ package com.wyr.garage.ui.web;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -13,6 +15,8 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.wyr.garage.databinding.ActivityH5Binding;
+
+import static android.view.View.GONE;
 
 public class H5Activity extends AppCompatActivity {
 
@@ -60,6 +64,20 @@ public class H5Activity extends AppCompatActivity {
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
 //                view.loadUrl();
                 return super.shouldOverrideUrlLoading(view, request);
+            }
+        });
+
+        activityH5Binding.webView.setWebChromeClient(new WebChromeClient() {
+            @Override
+            public void onProgressChanged(WebView view, int newProgress) {
+                super.onProgressChanged(view, newProgress);
+                if (newProgress == 100) {
+                    activityH5Binding.progressBar.setVisibility(GONE);
+                } else {
+                    if (activityH5Binding.progressBar.getVisibility() == GONE)
+                        activityH5Binding.progressBar.setVisibility(View.VISIBLE);
+                    activityH5Binding.progressBar.setProgress(newProgress);
+                }
             }
         });
     }
